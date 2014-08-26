@@ -18,5 +18,12 @@ describe 'payments' do
 			click_button 'Create share'
 			expect(page).to have_content '£19.99'
 		end
+
+		it 'a user can make a payment' do 
+			a_post = create(:share)
+			visit '/shares' 
+			click_button 'Pay with Card'
+			expect(page).to have_content ("Thanks, you paid £4.25")
+		end
 	end
 end

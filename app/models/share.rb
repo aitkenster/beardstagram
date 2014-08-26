@@ -24,4 +24,9 @@ class Share < ActiveRecord::Base
  		end
  	end
 
+ 	def price_calc
+ 			self.price = 0 if self.price == nil
+ 			self.price.to_i * 100
+ 	end
+
 end
