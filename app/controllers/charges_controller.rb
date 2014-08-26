@@ -8,6 +8,8 @@ def create
   @share = Share.find(params[:id])
   @amount = @share.price_calc
 
+  PurchaseConfirmation.invoice(current_user).deliver
+
   customer = Stripe::Customer.create(
     :email => 'example@stripe.com',
     :card  => params[:stripeToken]
