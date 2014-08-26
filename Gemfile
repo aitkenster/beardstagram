@@ -26,7 +26,8 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
-
+gem 'paperclip', github: 'thoughtbot/paperclip'
+gem 'aws-sdk'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -40,19 +41,14 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 group :development, :test do
-
-gem 'rspec-rails'
-gem 'capybara'
-gem 'warden'
-gem 'launchy'
+	gem 'rspec-rails'
+	gem 'capybara'
+	gem 'warden'
+	gem 'launchy'
 
 end
 
-gem 'paperclip', github: 'thoughtbot/paperclip'
-gem 'aws-sdk'
-
 gem 'devise'
-
 gem 'bootstrap-sass'
 gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
 gem 'autoprefixer-rails'
