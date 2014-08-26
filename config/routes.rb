@@ -5,6 +5,8 @@ Rails.application.routes.draw do
     resource :map
   end
 
+  resources :charges
+
   resources :clips
   root to: "shares#index"
 

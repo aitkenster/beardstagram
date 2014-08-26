@@ -12,9 +12,11 @@
 
 		<% share.clips.each do |clip| %>
 			<%= link_to clip.text, clip %>
-		<% end %>
-	
+		<% end %><br>
+		£<%=share.price%>
+		
 		</p>
+
 	<% end %>
 <% else %>
  No shares

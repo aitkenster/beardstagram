@@ -13,7 +13,7 @@ class SharesController < ApplicationController
 	end
 
 	def create
-		@share = Share.new(params[:share].permit(:title, :picture, :address, :clip_list))
+		@share = Share.new(params[:share].permit(:title, :picture, :address, :clip_list, :price))
 		@share.user = current_user
 		@share.save
 		redirect_to '/shares'

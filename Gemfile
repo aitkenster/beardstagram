@@ -45,6 +45,7 @@ group :development, :test do
 	gem 'capybara'
 	gem 'warden'
 	gem 'launchy'
+	gem 'factory_girl_rails'
 
 end
 
@@ -58,3 +59,5 @@ gem 'devise'
 gem 'bootstrap-sass'
 gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
 gem 'autoprefixer-rails'
+gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+
