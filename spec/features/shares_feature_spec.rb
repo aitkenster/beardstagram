@@ -43,6 +43,7 @@ describe 'shares' do
 			fill_in 'Title', with: 'Baby Beard'
 			attach_file 'Picture', Rails.root.join('spec/images/baby_beard.jpeg')
 			click_button 'Create share'
+			save_and_open_page
 			expect(page).to have_css 'img.uploaded-pic'
 		end
 
