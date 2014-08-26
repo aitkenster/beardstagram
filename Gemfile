@@ -53,5 +53,5 @@ gem 'aws-sdk'
 gem 'devise'
 
 gem 'bootstrap-sass'
-
+gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
 gem 'autoprefixer-rails'

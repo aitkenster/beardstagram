@@ -1,4 +1,10 @@
 GIT
+  remote: git://github.com/alexpeattie/heroku_secrets.git
+  revision: 717af8e0acf399bc88d2c8c1a7e230023942af0f
+  specs:
+    heroku_secrets (0.0.2)
+
+GIT
   remote: git://github.com/thoughtbot/paperclip.git
   revision: e8c1dc8a26183cf10e5eac7fb29eb7bdcf51d01f
   specs:
@@ -178,6 +184,7 @@ DEPENDENCIES
   capybara
   coffee-rails (~> 4.0.0)
   devise
+  heroku_secrets!
   jbuilder (~> 2.0)
   jquery-rails
   paperclip!
