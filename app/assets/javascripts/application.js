@@ -14,4 +14,5 @@
 //= require jquery_ujs
 //= require bootstrap-sprockets
 //= require gmaps
+//= require pusher.min
 //= require_tree .

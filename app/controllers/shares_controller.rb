@@ -10,6 +10,10 @@ class SharesController < ApplicationController
 			flash[:notice] = "Please sign up to Beardstagram to share pictures"
 			redirect_to '/shares'
 		end
+		Pusher['beardstagram'].trigger('my_event', {
+      message: 'hello world'
+    })
+
 	end
 
 	def create

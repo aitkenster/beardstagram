@@ -60,4 +60,5 @@ gem 'bootstrap-sass'
 gem 'heroku_secrets', github: 'alexpeattie/heroku_secrets'
 gem 'autoprefixer-rails'
 gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
+gem 'pusher'
 
