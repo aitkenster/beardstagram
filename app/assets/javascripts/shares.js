@@ -8,6 +8,6 @@
 
     var pusher = new Pusher('a7d4ef9bdf62f6be328a');
     var channel = pusher.subscribe('beardstagram');
-    channel.bind('my_event', function(data) {
+    channel.bind('photo_added', function(data) {
       alert(data.message);
     });

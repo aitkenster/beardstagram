@@ -7,7 +7,7 @@ class PurchaseConfirmation < ActionMailer::Base
   #   en.purchase_confirmation.invoice.subject
   #
   def invoice(user)
-    @greeting = "Hi"
+    @greeting = "Thanks for purchasing a picture from Beardstagram."
     @user = user
     mail to: user.email
   end
