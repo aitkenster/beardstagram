@@ -3,8 +3,9 @@ Beardstagram
 
 This project was to create a photo sharing website similar to Instagram.
 
-Screenshot:
 ![](app/assets/images/screenshot.png)
+
+To view the live app, visit: http://beardstagram.herokuapp.com/
 
 
 ###Specification
