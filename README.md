@@ -30,6 +30,7 @@ To view the live app, visit: http://beardstagram.herokuapp.com/
 + Warden
 + Capybara
 + Amazon Web Services
++ Pusher
 
 ###How to set it up
 
